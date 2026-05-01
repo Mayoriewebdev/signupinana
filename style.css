@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+
+    position: relative;
+}
+
+/* LOGO */
+.logo img {
+    height: 45px;
+}
+
+
+/* EXTRA SMALL DEVICES */
+@media(max-width:500px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+}
+
+/* end navbar */
+
+
+
+/* SIGNUP SECTION */
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* CONTAINER */
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+/* SIGNUP SECTION */
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* CONTAINER */
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SIGNUP TITLE IMAGE */
+.signup-title {
+    width: 200px; /* controls size of Signup image */
+    margin: 10px auto 20px;
+}
+
+.signup-title img {
+    width: 100%;
+    height: auto;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* LABEL */
+form label {
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: -10px;
+}
+
+/* INPUT */
+form input {
+    padding: 18px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+/* BUTTON IMAGE */
+.btn-img {
+    margin-top: 15px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    overflow: hidden; /* prevents overflow when zooming */
+}
+
+.btn-img img {
+    width: 100%;
+    max-width: 260px;
+    transition: transform 0.3s ease; /* smooth animation */
+}
+
+/* HOVER EFFECT */
+.btn-img:hover img {
+    transform: scale(1.08); /* zoom in */
+}
+
+/* OPTIONAL: click effect */
+.btn-img:active img {
+    transform: scale(0.95); /* slight press effect */
+}
+
+/* TERMS IMAGE */
+.terms-img {
+    margin-top: 15px;
+}
+
+.terms-img img {
+    width: 220px; /* controls terms size */
+}
